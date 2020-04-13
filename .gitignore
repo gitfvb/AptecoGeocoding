@@ -3,3 +3,4 @@
 settings.json
 aes.key
 *.log
+dev/
