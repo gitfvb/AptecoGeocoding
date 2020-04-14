@@ -339,6 +339,7 @@ if ( $res.statusCode -eq [System.Net.HttpStatusCode]::Created.value__ ) {
                 Write-Log -message "Done with export id $( $exportId ) in $( $t.Seconds ) seconds!"
                 #>
                     rewriteFileInOnce -inputPath $downloadSuccessFile -outputPath $successFile -skipFirstLines 1
+                    
                 }
                 "stream" {
                     rewriteFileAsStream -inputPath $downloadSuccessFile -outputPath $successFile -inputEncoding ([System.Text.Encoding]::UTF8.CodePage) -outputEncoding ([System.Text.Encoding]::UTF8.CodePage) -skipFirstLines 1                

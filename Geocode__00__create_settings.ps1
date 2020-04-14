@@ -78,7 +78,7 @@ $mapping = @{
 # fixed values not contained in the file
 $fixedValue = @{
     "GeocodeRequest/Culture" = "de-DE"
-    #"GeocodeRequest/Address/CountryRegion" = "Germany"
+    "GeocodeRequest/Address/CountryRegion" = "Germany"
 }
 
 $inputMethod = "file" # file|sqlserver
@@ -180,7 +180,7 @@ $settings = @{
     # Output
     rewrite = @{
         active = $true # set to true if the files should be rewritten
-        method = "stream"
+        method = "stream" # full|stream
     }
     exportfiles = $exportFiles
 
